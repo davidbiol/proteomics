@@ -1,7 +1,7 @@
 install.packages("Peptides")
 library(Peptides)
 
-cox1 <- read.fasta(file="R/win-library/3.6/seqinr/sequences/cox1.fasta", seqtype="AA")
+cox1 <- read.fasta(file="cox1.fasta", seqtype="AA")
 aaComp(cox1[1]) #Compute the amino acid composition of a protein sequence for human sequence
 aIndex(cox1[1]) #Computes de aliphatic index of the protein sequence
 charge(cox1, pH=7, pKscale="Lehninger") #Predict the net charge of the protein
