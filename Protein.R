@@ -1,4 +1,3 @@
-install.packages("Peptides")
 library(Peptides)
 
 cox1 <- read.fasta(file="cox1.fasta", seqtype="AA")
